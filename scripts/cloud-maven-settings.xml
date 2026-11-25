@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0">
+    <proxies>
+        <proxy>
+            <id>codex-cloud</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>${env.AI_ASSISTANT_PROXY_HOST}</host>
+            <port>@PROXY_PORT@</port>
+            <nonProxyHosts>localhost|127.0.0.1</nonProxyHosts>
+        </proxy>
+    </proxies>
+</settings>
